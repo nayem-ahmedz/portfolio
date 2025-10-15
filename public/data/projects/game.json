@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Simple Ludo",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "description": "A simple browser-based Ludo game where players roll a dice to earn points, aiming to reach at least 20 to win. Built with HTML, CSS, and JavaScript, it demonstrates generating random numbers, displaying dice images, and DOM manipulation. Features include a Play Again option, a progress bar, and storing high scores in localStorage.",
+    "ss": "/project-images/simple-ludo.webp",
+    "link": "https://simple-ludo-game.netlify.app/",
+    "repo": "https://github.com/nayem-ahmedz/simple-ludo-game",
+    "features": ["5 chances to roll dice", "Achive 20 points to win", "Progress bar for scores", "Replay option available", "Show highscore", "High score saved in localStorage"]
+  }
+]

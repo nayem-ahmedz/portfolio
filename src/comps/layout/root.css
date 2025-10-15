@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 :root{
     /* Typography */
     --font-heading: "Inter", sans-serif;
@@ -72,6 +67,7 @@ body{
     font-optical-sizing: auto;
     background: var(--bg-gradient);
     min-height: 100vh;
+    margin: 0;
 }
 /* shared styles */
 .container{
@@ -116,7 +112,9 @@ body{
 header{
     background: var(--bg-header);
     font-family: var(--font-heading);
+    padding: 30px 0;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1;
 }
@@ -127,15 +125,17 @@ header{
 }
 .brand{
     color: var(--text-primary);
+    margin: 0;
 }
 
 /* Top Navigation */
 nav.top-nav{
-    padding: 30px 0;
+    margin: 0;
     position: relative;
 }
 .top-nav ul{
     list-style-type: none;
+    margin: 0;
     transition: all 0.4s;
 }
 .top-nav ul li{
@@ -151,11 +151,11 @@ nav.top-nav{
     font-weight: 600;
     transition: all 0.3s ease-in;
 }
-.top-nav ul li a:hover{
+.top-nav ul li a:hover:not(.active){
     color: var(--link-primary-hover);
     background-color: var(--link-primary);
 }
-.link-active{
+.active{
     /* box-shadow: 0 0 3px rgba(255,255,255, 0.35); */
     box-shadow: 0 0 3px var(--text-primary);
 }

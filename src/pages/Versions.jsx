@@ -1,5 +1,6 @@
 function Versions(){
     const versions = [
+        { version: '2.2.0', date: '16 Oct 2025', changes: ['Updated route using React Router Data mode', 'redefined project strucutre', 'added sort method on project page'] },
         { version: '2.1.0', date: '17 Sep 2025', changes: ['Updated Profile image', 'Added Modal to show up project details', 'Animated placeholder before project screenshot loads', 'Redefined layout using grid in Project section'] },
         { version: '2.0.0', date: '16 August 2025', changes: ['Added Dark Mode', 'Redefined UI'] },
         { version: '1.7.0', date: '23 Feb 2025', changes: ['Moved to vite from CRA'] },

@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Age Calculator",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "description": "A simple app that calculates exact age from a user's birth date. It demonstrates input handling, date logic, and dynamic result display with JavaScript.",
+    "ss": "/project-images/life-timer-app.webp",
+    "link": "https://wev-dev.netlify.app/projects/web-projects/js/life-timer-app/",
+    "repo": "https://github.com/nayem-ahmedz/life-timer-app",
+    "features": ["Calculate age", "Dynamic and engaging output", "Responsive design"]
+  },
+  {
+    "id": 2,
+    "name": "Random Image Generator",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "description": "An app that fetches and displays random images on click. It practices DOM manipulation, event handling, and integrating dark and light mode.",
+    "ss": "/project-images/random-image-generator.webp",
+    "link": "https://wev-dev.netlify.app/projects/web-projects/js/random-image-generator/",
+    "repo": "https://github.com/nayem-ahmedz/random-image-generator",
+    "features": ["Generate random image", "Dark and Light mode", "Responsive Design"]
+  },
+  {
+    "id": 3,
+    "name": "Budget Tracker",
+    "tech": ["HTML", "TailwindCSS", "Daisy UI", "JavaScript"],
+    "description": "A web app that helps you manage your budget efficiently for trips. Users can select destinations and transportation options like bus, train, or flight. It demonstrates practical use of JavaScript DOM manipulation while planning and tracking expenses.",
+    "ss": "/project-images/budget-tracker.webp",
+    "link": "https://nz-budget-tracker.netlify.app/",
+    "repo": "https://github.com/nayem-ahmedz/budget-tracker",
+    "features": ["Card", "Add to cart", "Manage cart", "View total expenses", "Cart badge on nav", "Plan trips efficiently", "Responsive Design"]
+  },
+  {
+    "id": 4,
+    "name": "Emergency Hotline",
+    "tech": ["HTML", "TailwindCSS", "Daisy UI", "JavaScript"],
+    "description": "A small utility app that lists important emergency contact numbers. It provides quick access with a clean, responsive interface.",
+    "ss": "/project-images/emergency-hotline.webp",
+    "link": "https://nayem-ahmedz.github.io/emergency-hotline/",
+    "repo": "https://github.com/nayem-ahmedz/emergency-hotline",
+    "features": ["Emergency contacts at your fingertips", "Demo calling", "Call history", "Favourite contact", "Single tap copy number", "Clear history", "Resposive design"]
+  },
+  {
+    "id": 5,
+    "name": "English Janala",
+    "tech": ["HTML", "TailwindCSS", "Daisy UI", "JavaScript", "Fetch API"],
+    "description": "An educational app for learning new English words. It fetches vocabulary dynamically and updates the interface to support language practice.",
+    "ss": "/project-images/english-janala.webp",
+    "link": "https://nayem-ahmedz.github.io/english-janala/",
+    "repo": "https://github.com/nayem-ahmedz/english-janala",
+    "features": ["Improves vocabulary practice interactively", "Dynamically fetched words using API", "Lesson level selection", "Empty lesson level message", "Search word functionality", "Responsive design"]
+  }
+]

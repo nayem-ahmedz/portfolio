@@ -1,9 +1,6 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const profileImg = '/media/nayem-ahmed2.webp';
-import Services from './Services';
-import Skills from './Skills';
-import RecentUpdates from './RecentUpdates';
 
 function Home(){
     useEffect(() => {document.title = 'Nayem Ahmed | Front-end Web Developer'}, []);
@@ -31,9 +28,6 @@ function Home(){
                     <Link to='/pages/contact' className='btn-primary'> <i className="fa-solid fa-message"></i> Let's Talk</Link>
                 </div>
             </section>
-            <Services />
-            <Skills />
-            <RecentUpdates />
         </>
     );
 }
