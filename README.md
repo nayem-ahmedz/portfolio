@@ -20,9 +20,10 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 ## Creation
 *Created on : 6 September 2024*
 *Coverted into React App on : 1 November 2024 (vite/23-Feb-2025)*
-*Last updated on : 16 Oct 2025*
+*Last updated on : 21 Oct 2025*
 
 ## Version History
+- **v2.2.1 (Oct 2025)** – Updated routes, solved image loadin issue and added 2 React Js Projects
 - **v2.2.0 (Oct 2025)** – Updated route using React Router Data mode, redefined project strucutre, added sort method on project page
 - **v2.1.0 (Sep 2025)** – Updated Profile, Modal on Project section, animation before image loads, redefined grid-based project layout
 - **v2.0.0 (Aug 2025)** – Added dark mode and Redefine UI
