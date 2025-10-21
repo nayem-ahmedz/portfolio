@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "name": "Parallax Website",
+    "tech": ["HTML", "CSS"],
+    "description": "A simple parallax scrolling website showcasing smooth background transitions and layered design. It highlights the depth illusion and creative scrolling interaction using pure HTML and CSS.",
+    "ss": "/project-images/parallax-website.webp",
+    "moreSS": [],
+    "link": "https://nayem-ahmedz.github.io/parallax-website/",
+    "repo": "https://github.com/nayem-ahmedz/parallax-website",
+    "features": [
+      "Parallax effect on scrolling",
+      "Responsive design for desktop, tablet, and mobile"
+    ],
+    "createdAt": "2023-06-10",
+    "lastUpdate": "2025-07-19",
+    "tags": ["parallax", "scrolling", "web design"],
+    "status": "completed",
+    "demoVideo": "",
+    "relatedProjects": []
+  },
+  {
+    "id": 2,
+    "name": "Tribute Website",
+    "tech": ["HTML", "CSS"],
+    "description": "A single-page tribute dedicated to Hazrat Muhammad (SAW). It highlights a few important details about his life in a clean, minimal design. The page also includes a link to the Wikipedia article for readers who wish to explore more.",
+    "ss": "/project-images/tribute-website.webp",
+    "moreSS": [],
+    "link": "https://wev-dev.netlify.app/projects/web-projects/css/tribute-website/",
+    "repo": "https://github.com/nayem-ahmedz/tribute-website",
+    "features": [
+      "Some information about the Prophet (PBUH)",
+      "Responsive design",
+      "Wiki link to read more"
+    ],
+    "createdAt": "2023-08-15",
+    "lastUpdate": "2025-07-19",
+    "tags": ["tribute", "single-page", "minimal design"],
+    "status": "completed",
+    "demoVideo": "",
+    "relatedProjects": []
+  },
+  {
+    "id": 3,
+    "name": "Furniture Website",
+    "tech": ["HTML", "CSS"],
+    "description": "A static landing page for a furniture store featuring product displays, banners, and responsive layouts. Designed to simulate an e-commerce style interface with attractive visuals.",
+    "ss": "/project-images/furniture-website.webp",
+    "moreSS": [],
+    "link": "https://wev-dev.netlify.app/projects/furniture-website/",
+    "repo": "https://github.com/nayem-ahmedz/furniture-website",
+    "features": [
+      "Banner",
+      "Product card",
+      "Subscribe Newsletter",
+      "Contact Form",
+      "Google Maps embedded via iframe",
+      "Grid-layout footer",
+      "Fully responsive design"
+    ],
+    "createdAt": "2024-01-10",
+    "lastUpdate": "2025-07-19",
+    "tags": ["e-commerce", "landing page", "furniture"],
+    "status": "completed",
+    "demoVideo": "",
+    "relatedProjects": []
+  },
+  {
+    "id": 4,
+    "name": "Time Planner App",
+    "tech": ["HTML", "CSS"],
+    "description": "A web page showcasing the Time Planner mobile application. It presents the app’s features, pricing, usage video, and detailed information about the full application. Visitors can explore the app and learn how it helps manage time effectively.",
+    "ss": "/project-images/time-planner-app.webp",
+    "moreSS": [],
+    "link": "https://wev-dev.netlify.app/projects/time-planner-app/",
+    "repo": "https://github.com/nayem-ahmedz/time-planner-app",
+    "features": [
+      "Hero-banner",
+      "YouTube video embedded via iframe",
+      "Product card",
+      "Contact Form",
+      "Google map embeded via iframe",
+      "Fully responsive design"
+    ],
+    "createdAt": "2024-05-05",
+    "lastUpdate": "2025-07-19",
+    "tags": ["time management", "planner", "web app showcase"],
+    "status": "completed",
+    "demoVideo": "https://youtu.be/demo-time-planner",
+    "relatedProjects": []
+  },
+  {
+    "id": 5,
+    "name": "Flowers Mart",
+    "tech": ["HTML", "CSS"],
+    "description": "An online flower shop concept with product cards, prices, and categories. It emphasizes colorful design, user-friendly navigation, and e-commerce style presentation.",
+    "ss": "/project-images/flowers-mart.webp",
+    "moreSS": [],
+    "link": "https://nayem-ahmedz.github.io/flowers-mart/",
+    "repo": "https://github.com/nayem-ahmedz/flowers-mart",
+    "features": [
+      "Hero-banner",
+      "Flower cards",
+      "Banner with badge",
+      "Latest deal designed using grid",
+      "4-colum grid layout in footer",
+      "Responsive design"
+    ],
+    "createdAt": "2024-06-15",
+    "lastUpdate": "2025-07-19",
+    "tags": ["e-commerce", "flowers", "online shop"],
+    "status": "completed",
+    "demoVideo": "",
+    "relatedProjects": []
+  }
+]

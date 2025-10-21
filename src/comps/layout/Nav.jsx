@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { Outlet, Link, useLocation } from 'react-router-dom';
-import ThemeToggle from './ThemeToggle';
+import ThemeToggle from '../utils/ThemeToggle';
+import { NavLink } from 'react-router';
 
 function Nav(){
-    const location = useLocation();
     const [isNavOpen, setIsNavOpen] = useState(false);
     const toggleNav = () => setIsNavOpen(!isNavOpen);
     return(
@@ -15,16 +14,15 @@ function Nav(){
                     <div className='bar3'></div>
                 </div>
                 <ul className={`${(isNavOpen) ? 'visible' : ''}`}>
-                    <li> <Link to='/' className={location.pathname === '/' ? 'link-active' : ''}>Home</Link> </li>
-                    <li> <Link to='/pages/about' className={location.pathname === '/pages/about' ? 'link-active' : ''}>About</Link> </li>
-                    <li> <Link to='/pages/contact' className={location.pathname === '/pages/contact' ? 'link-active' : ''}>Contact</Link> </li>
-                    <li> <Link to='/pages/projects' className={location.pathname === '/pages/projects' ? 'link-active' : ''}>Projects</Link> </li>
+                    <li> <NavLink to='/'>Home</NavLink> </li>
+                    <li> <NavLink to='/about'>About</NavLink> </li>
+                    <li> <NavLink to='/contact'>Contact</NavLink> </li>
+                    <li> <NavLink to='/projects'>Projects</NavLink> </li>
                     <li>
                         <ThemeToggle />
                     </li>
                 </ul>
             </nav>
-            <Outlet />
         </>
     );
 }

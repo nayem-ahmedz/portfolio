@@ -1,10 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-// import App from './App2.jsx'
+import { RouterProvider } from 'react-router'
+import { router } from './routes/route'
+import ReactGA from 'react-ga4';
+
+const TRACKING_ID = import.meta.env.VITE_GA_TRACKING_ID;
+if (TRACKING_ID) {
+  ReactGA.initialize(TRACKING_ID);
+}
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>
 )

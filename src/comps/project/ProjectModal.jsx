@@ -1,4 +1,4 @@
-import '../assets/project-modal.css';
+import './project-modal.css';
 
 function ProjectModal({project, onClose}) {
     return (
