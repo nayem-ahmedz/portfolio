@@ -15,7 +15,7 @@ function Footer(){
                     <p>
                         <a href='https://wev-dev.netlify.app/' title='Check out my Practice Tasks' target='_blank' rel='noopener noreferrer'>Front-end Journey</a> ~ <Link to='/blog'>Blog</Link> ~ <Link to='/contact'>Contact</Link>
                     </p>
-                    <p>@Nayem's Portfolio | <small>20</small>24~25 | <Link to='/versions'>v 2.2.0</Link> </p>
+                    <p>@Nayem's Portfolio | <small>20</small>24~25 | <Link to='/versions'>v 2.2.1</Link> </p>
                 </div>
             </div>
         </footer>

@@ -11,8 +11,9 @@ function Projects(){
     const projects = [
         { id: 1, category: 'HTML and CSS', dataUrl: '/data/projects/html-css.json' },
         { id: 2, category: 'JavaScript', dataUrl: '/data/projects/js.json' },
-        { id: 3, category: 'Game Projects', dataUrl: '/data/projects/game.json' },
-        { id: 4, category: 'University Projects', dataUrl: '/data/projects/university-web.json' }
+        { id: 3, category: 'React Js', dataUrl: '/data/projects/react-js.json' },
+        { id: 4, category: 'Game Projects', dataUrl: '/data/projects/game.json' },
+        { id: 5, category: 'University Projects', dataUrl: '/data/projects/university-web.json' }
     ];
     return(
         <section className='projects'>

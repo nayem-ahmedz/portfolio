@@ -107,7 +107,9 @@
     margin: 0 auto 10px;
 }
 .description{
+    font-size: 1.15rem;
     margin: 10px auto 20px;
+    line-height: 1.35;
 }
 .sub-title{
     margin: 20px auto 10px;
@@ -142,7 +144,14 @@
     margin-right: 5px;
 }
 .features{
-    list-style-position: inside;
+    /* list-style-position: inside; */
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+}
+.features li{
+    margin-bottom: 10px;
+    font-size: 1.05rem;
 }
 .modal-close-btn{
     font-size: 2rem;
@@ -167,7 +176,8 @@
 }
 @media screen and (max-width: 768px){
     .modal-content{
-        padding: 20px;
+        padding: 40px 20px;
+        max-height: 75vh;
     }
     .title{
         font-size: 1.75rem;

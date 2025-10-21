@@ -16,7 +16,7 @@ const router = createBrowserRouter([
             { path: '/about', Component: About },
             { path: '/contact', Component: Contact },
             { path: '/projects', Component: Project },
-            { path: '/versions', Component: Versions},
+            { path: '/versions', loader: () => fetch('/data/others/versions.json'), Component: Versions},
             { path: '/*', Component: NoPage }
         ]
     }

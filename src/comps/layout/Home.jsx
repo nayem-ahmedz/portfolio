@@ -25,7 +25,7 @@ function Home(){
                     <h3 className='subtitle profession'>I am a <span id='mcr-rule-title'> Front-end Web Developer</span></h3>
                     {/* { displayedText ? displayedText : 'Front-end Web Developer' } */}
                     <a href='/media/cv-nayem-ahmed.pdf' download='Nayem_Ahmed_CV.pdf' target='_blank' rel='noopener noreferrer' className='btn-primary'> <i className="fa-solid fa-download"></i> Download CV</a>
-                    <Link to='/pages/contact' className='btn-primary'> <i className="fa-solid fa-message"></i> Let's Talk</Link>
+                    <Link to='/contact' className='btn-primary'> <i className="fa-solid fa-message"></i> Let's Talk</Link>
                 </div>
             </section>
         </>

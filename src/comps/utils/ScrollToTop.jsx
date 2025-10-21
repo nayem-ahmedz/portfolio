@@ -1,16 +1,17 @@
-// ScrollTo.js
+// ScrollTo to top on router change
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router';
 
-function ScrollTo() {
+
+function ScrollToTop() {
     const { pathname } = useLocation();
 
     useEffect(() => {
         // Scroll to top of the page when the path changes
-        window.scrollTo(0, 0);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }, [pathname]);
 
     return null;
 }
 
-export default ScrollTo;
+export default ScrollToTop;

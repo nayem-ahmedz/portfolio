@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import Services from '../comps/Services';
-import Skills from '../comps/Skills';
+import Services from '../comps/services/Services';
+import Skills from '../comps/skills/Skills';
 
 function Contact(){
     useEffect(() => {document.title = 'Contact | Nayem Ahmed'}, []);

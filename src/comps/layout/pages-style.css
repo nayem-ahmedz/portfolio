@@ -347,6 +347,15 @@
     margin-left: 5px;
 }
 
+/* project image loading clear and effect */
+.loading-image-effect{
+    filter: blur(10px);
+    transition: filter 0.3s ease-out;
+}
+.loaded-image-clear{
+    filter: blur(0);
+}
+
 /* 404 Error Page */
 .error-report{
     opacity: 0.5;

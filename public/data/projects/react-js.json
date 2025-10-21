@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "slug": "customer-support-zone",
+    "name": "Customer Support Zone",
+    "category": "Web Application",
+    "shortSummary": "A smart ticket management system that streamlines customer support and issue tracking efficiently.",
+    "description": "Providing the best system to manage customers ticketing efficiently, allowing support teams to track, update, and resolve tickets seamlessly with an intuitive interface.\n\nEnjoy a simple, elegant dashboard, quick response tools, and smart filters that make customer management faster and easier than ever before. Designed with a focus on performance, usability, and responsiveness, it adapts beautifully to all devices and screen sizes.",
+    "tech": [
+      "HTML",
+      "TailwindCSS",
+      "Daisy UI",
+      "JavaScript",
+      "React JS"
+    ],
+    "otherTools": [
+      "Google Fonts",
+      "React Toastify"
+    ],
+    "features": [
+      "View all active support tickets",
+      "Track in-progress and resolved tickets",
+      "Smart status-based filtering",
+      "Responsive layout with Tailwind grid"
+    ],
+    "ss": "/project-images/customer-support-zone.webp",
+    "moreSS": [],
+    "link": "https://customer-support-zonee.netlify.app/",
+    "repo": "https://github.com/nayem-ahmedz/customer-support-zone",
+    "createdAt": "2025-09-26",
+    "lastUpdate": "2025-10-18",
+    "difficulty": "Intermediate",
+    "stackType": "Frontend",
+    "tags": [
+      "Support",
+      "Dashboard",
+      "React"
+    ],
+    "status": "completed",
+    "demoVideo": "",
+    "relatedProjects": []
+  },
+  {
+    "id": 2,
+    "slug": "appovate",
+    "name": "Appovate Software",
+    "category": "Web Application",
+    "shortSummary": "A modern web app platform for discovering, installing, and managing software applications with an intuitive interface and smart functionality.",
+    "description": "Appovate Software delivers a seamless app discovery and management experience, allowing users to explore, install, and organize software effortlessly. Built with a modern React-based frontend, it focuses on performance, accessibility, and design precision.\n\nThe platform highlights trending apps based on downloads, supports live search, and provides detailed app pages with ratings, analytics, and installation tracking. A dynamic local storage system ensures installed apps persist even after page reloads. Responsive by design, Appovate offers a smooth experience across all devices and screen sizes.\n\nWith thoughtful UX patterns and robust data handling, Appovate demonstrates the power of a well-structured frontend architecture for interactive web platforms.",
+    "tech": [
+      "HTML",
+      "TailwindCSS",
+      "Daisy UI",
+      "JavaScript",
+      "React JS"
+    ],
+    "otherTools": [
+      "Google Fonts",
+      "React Router",
+      "React Toastify",
+      "Lucide Icons"
+    ],
+    "features": [
+      "Dynamic and visually engaging user interface",
+      "Trending apps displayed on homepage based on download counts",
+      "Comprehensive apps page showing all available applications",
+      "Live search functionality across app listings",
+      "Dynamic app details page with complete app information",
+      "Demo installation process with success toast notifications",
+      "Installed apps page featuring uninstall option for each app",
+      "LocalStorage integration to persist installed app data",
+      "Sorting installed apps by download volume",
+      "Error handling for missing pages or unavailable apps",
+      "Loading animations during app searches and page transitions",
+      "Fully responsive layout using Tailwind grid system"
+    ],
+    "ss": "/project-images/appovate.webp",
+    "moreSS": [],
+    "link": "https://appovate.netlify.app/",
+    "repo": "https://github.com/nayem-ahmedz/appo-vate",
+    "createdAt": "2025-10-09",
+    "lastUpdate": "2025-10-18",
+    "difficulty": "Advanced",
+    "stackType": "Frontend",
+    "tags": [
+      "Dashboard",
+      "Live Search",
+      "Loading Animation",
+      "React",
+      "App Store",
+      "Frontend",
+      "UI/UX",
+      "Interactive"
+    ],
+    "status": "completed",
+    "demoVideo": "",
+    "relatedProjects": [
+      "customer-support-zone"
+    ]
+  }
+]

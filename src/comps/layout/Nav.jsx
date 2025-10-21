@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ThemeToggle from './ThemeToggle';
+import ThemeToggle from '../utils/ThemeToggle';
 import { NavLink } from 'react-router';
 
 function Nav(){

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 const profileImg = '/media/nayem-ahmed2.webp';
-import Services from '../comps/Services';
-import Skills from '../comps/Skills';
+import Services from '../comps/services/Services';
+import Skills from '../comps/skills/Skills';
 
 function Education(){
     const edu = {

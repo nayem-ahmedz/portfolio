@@ -5,9 +5,16 @@
     "tech": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     "description": "A web app for managing blood donors, inventory, and appointments. Designed to simplify donation tracking and improve accessibility of information.",
     "ss": "/project-images/blood-donation-management-system.webp",
+    "moreSS": [],
     "link": "https://uni-project1.netlify.app/",
     "repo": "https://github.com/nayem-ahmedz/blood-donation-management-system",
-    "features": ["Donor registration and management", "Sign up and login system", "Blood inventory management", "Appointment scheduling", "Reports and analytics"]
+    "features": ["Donor registration and management", "Sign up and login system", "Blood inventory management", "Appointment scheduling", "Reports and analytics"],
+    "createdAt": "",
+    "lastUpdate": "",
+    "tags": [],
+    "status": "",
+    "demoVideo": "",
+    "relatedProjects": []
   },
   {
     "id": 2,
@@ -15,8 +22,15 @@
     "tech": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     "description": "A communication platform between students, parents, and schools. It provides result viewing, tuition tracking, and announcements in a structured system.",
     "ss": "/project-images/student-parent-portal.webp",
+    "moreSS": [],
     "link": "",
     "repo": "https://github.com/nayem-ahmedz/student-parent-portal",
-    "features": ["Student dashboard", "Result viewing", "Tuition fee tracking", "Notice board/announcements"]
+    "features": ["Student dashboard", "Result viewing", "Tuition fee tracking", "Notice board/announcements"],
+    "createdAt": "",
+    "lastUpdate": "",
+    "tags": [],
+    "status": "",
+    "demoVideo": "",
+    "relatedProjects": []
   }
 ]

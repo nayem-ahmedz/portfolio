@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Loading from './Loading';
+import Card from './Card';
 
 export default function ProjectShowcase({ title, projectData, handleSelected }) {
     const [projects, setProjects] = useState([]);
@@ -37,13 +38,7 @@ export default function ProjectShowcase({ title, projectData, handleSelected }) 
             </div>
             <div className='project-outer'>
                 {
-                    loading ? <Loading /> : projects.map(project => <div className='project-inner' key={project.id} onClick={() => handleSelected(project)}>
-                        <img src={project.ss} alt={project.name + ' screenshot'} loading='lazy' className='project-ss' />
-                        <div className='learn-more'>
-                            <i className='fa-solid fa-circle-info'></i>
-                            <h3 className='project-name'> {project.name} </h3>
-                        </div>
-                    </div>)
+                    loading ? <Loading /> : projects.map(project => <Card key={project.id} project={project} showModal={() => handleSelected(project)} />)
                 }
             </div>
         </article>
