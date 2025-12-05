@@ -1,15 +1,22 @@
-# Portfolio Website - Nayem Ahmed
+# Nayem's Space
+A portfolio website of Nayem Ahmed
 
 ## Overview
-Hi, I am **Nayem Ahmed**, a third-year student of B.Sc in Computer Science and Engineering at Metropolitan University, Sylhet. I am a passionate **Front-End Web Developer** with a keen interest in creating interactive and visually appealing websites. This portfolio showcases some of my best work and demonstrates my skills in web development.
+Hi, I am **Nayem Ahmed**, a passionate Computer Science and Engineering student with a strong foundation in web development (MERN stack)
+and expertise in data science and machine learning. This portfolio showcases some of my best work and demonstrates my skills in web development.
 
 You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-ahmed.vercel.app/);
 
+<!-- ![Portfolio Screenshot](./public/media/screenshot.webp) -->
+
 ## Technology used
+- Next Js
+- TailwindCSS and DaisyUI
+- TypeScript
 - HTML
-- CSS
-- JavaScript
-- React Js
+
+## Tools and Libraries
+- react-icons
 
 ## Features
 - A dynamic and fully responsive layout.
@@ -17,10 +24,12 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 - Contact form for direct communication.
 - Animations and transitions for better user experience.
 
-## Creation
-*Created on : 6 September 2024*
-*Coverted into React App on : 1 November 2024 (vite/23-Feb-2025)*
-*Last updated on : 21 Oct 2025*
+## Project Timeline
+- Initially Created on: 6 September 2024
+Converted on
+- React App: 1 November 2024 (vite/23-Feb-2025)
+- Next Js App: 5 Dec 2024
+- Last updated on: 5 Dec 2024
 
 ## Version History
 - **v2.2.1 (Oct 2025)** – Updated routes, solved image loadin issue and added 2 React Js Projects
@@ -36,5 +45,3 @@ If you would like to get in touch, feel free to connect via:
 + Email : nayemahmedz@proton.me 
 + Linkedin : www.linkedin.com/in/nayem-ahmedz
 + Github : https://github.com/nayem-ahmedz/
-
-### Thank You!

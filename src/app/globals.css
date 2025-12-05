@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* custom css */
+.containerr{
+    max-width: 1440px;
+    margin: auto;
+}
