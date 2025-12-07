@@ -3,10 +3,10 @@ import { FaDownload } from "react-icons/fa6";
 
 export default function PublicHeader() {
     const navLinks = <>
-        <li> <Link href='/'>Home</Link> </li>
-        <li> <Link href='/about'>About</Link> </li>
-        <li> <Link href='/contact'>Contact</Link> </li>
-        <li> <Link href='/projects'>Projects</Link> </li>
+        <li> <Link href='/' className="text-base">Home</Link> </li>
+        <li> <Link href='/about' className="text-base">About</Link> </li>
+        <li> <Link href='/contact' className="text-base">Contact</Link> </li>
+        <li> <Link href='/projects' className="text-base">Projects</Link> </li>
     </>;
     return (
         <header className="bg-base-100 shadow-sm">
@@ -34,7 +34,7 @@ export default function PublicHeader() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className="btn"> <FaDownload /> Resume</button>
+                    <button className="btn text-base"> <FaDownload className="-mt-1" /> Resume</button>
                 </div>
             </div>
         </header>

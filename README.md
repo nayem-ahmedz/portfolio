@@ -17,6 +17,7 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 
 ## Tools and Libraries
 - react-icons
+- react-simple-typewriter
 
 ## Features
 - A dynamic and fully responsive layout.
