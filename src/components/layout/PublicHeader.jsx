@@ -9,7 +9,7 @@ export default function PublicHeader() {
         <li> <Link href='/projects' className="text-base">Projects</Link> </li>
     </>;
     return (
-        <header className="bg-base-100 shadow-sm">
+        <header className="bg-base-100 shadow-sm sticky top-0 z-10">
             <div className="navbar containerr">
                 <div className="navbar-start">
                     <div className="dropdown">

@@ -1,5 +1,8 @@
 import ProfileImage from "@/components/shared/ProfileImage";
+import Services from "@/components/ui/homepage/Services";
 import { CgProfile } from "react-icons/cg";
+import { FaUserGraduate } from "react-icons/fa";
+import { RiSendPlane2Line } from "react-icons/ri";
 
 export default function About() {
     return (
@@ -11,15 +14,33 @@ export default function About() {
                 <h1 className='text-3xl md:text-4xl my-2'>Nayem Ahmed</h1>
                 <p className="text-xl">Full-stack Web Developer</p>
             </div>
-            <article className=''>
-                <h3 className='flex gap-3 items-center text-3xl my-4'> <CgProfile /> About Me</h3>
+            <article className='mb-8'>
+                <h3 className='flex gap-3 items-center text-2xl md:text-3xl my-3 mt-8'> <CgProfile /> About Me</h3>
                 <p>
-                    Hey! I am Nayem Ahmed. A final-year student of Computer Science and Engineering at Metropolitan University. I am passionate about Web Develpment. <br /> I started learning web development from July 2023. Since then I explored HTML, CSS, Js, Bootstrap, React Js and a lot more. In my university, I have created a Project named Student-Parent Portal using php and mySQL. Thus I have some knowledge about backend as well. But I am planning to use Javascript for both front-end and backend. My goal is to be a Full-stack Web Developer. Am I following path of MERN stack?
+                    I am Nayem Ahmed, a dedicated Full-Stack JavaScript Developer specializing in the MERN stack. I focus on building reliable, efficient, and user-friendly web applications. With hands-on experience across frontend and backend technologies, I enjoy transforming business requirements into scalable technical solutions.
                 </p>
-                <p>
-                    During first-year in my university, learnt 'C' as my first Programming language. C is amazing. Day by day, I have got chance to explore C++, Java and many other programming language. Although I have experience with Java, I prefer using JavaScript for full-stack development rather than Spring Boot, a framework of Java.
-                </p>
+                <h4 className="text-2xl my-2">Technical Expertise</h4>
+                <ul className="list-disc pl-6 space-y-2">
+                    <li>Proficient in React.js, Node.js, Express.js, MongoDB, and RESTful API development</li>
+                    <li>Strong understanding of frontend engineering, including responsive UI, component-driven architecture, and state management</li>
+                    <li>Experience integrating authentication systems, including Firebase Auth and custom backend auth such as JWT Token</li>
+                    <li>Skilled in API design, data modeling, and secure backend development</li>
+                    <li>Well-versed with Git, GitHub, Linux, Postman, and modern deployment platforms such as Vercel and Render</li>
+                </ul>
+                <h3 className='flex gap-3 items-center text-2xl md:text-3xl my-3 mt-6'> <FaUserGraduate /> Education</h3>
+                <h4>B.Sc in Computer Science and Engineering</h4>
+                <h4>Metropolitan University, Sylhet</h4>
+                <p>2022 - 2025 </p>
+                <p>Courseworks : Machine Learning, Data Strucutre, Algorithm, Database, Object Oriented Programming...</p>
+                <h4 className="flex gap-3 text-2xl md:text-3xl my-3 mt-6"> <RiSendPlane2Line /> Professional Interests & Goals</h4>
+                <ul className="list-disc pl-6 space-y-2">
+                    <li>Building scalable backend systems and improving expertise in system design</li>
+                    <li>Expanding knowledge in Next.js, advanced backend architectures, and cloud-native development</li>
+                    <li>Contributing to open-source projects and collaborating with engineering teams</li>
+                    <li>Continuously learning new tools and frameworks to enhance development efficiency </li>
+                </ul>
             </article>
+            <Services />
         </section>
     );
 }

@@ -11,7 +11,7 @@ export default function Contact() {
     }
     return (
         <section className="hero min-h-[70vh] py-10">
-            <div className="hero-content flex-col lg:flex-row gap-10 lg:gap-16">
+            <div className="hero-content flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-40">
                 <div className="text-left shrink-0">
                     <p className="ml-1 text-xl mb-2">Contact Me!</p>
                     <h1 className="text-3xl md:text-5xl font-bold mb-4">Let's Collaborate</h1>
