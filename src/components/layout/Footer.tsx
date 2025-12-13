@@ -38,10 +38,10 @@ export default function Footer() {
                     <p className="flex items-center gap-2"> <MdOutlineLocationOn className="text-xl" /> Sylhet, Bangladesh </p>
                     <a href="mailto:nayemahmedz@proton.me" className="link link-hover flex items-center gap-2"> <MdOutlineMail className="text-xl" /> nayemahmedz@proton.me</a>
                     <div className="flex gap-3 mt-3">
-                        <a className="link link-hover text-2xl"> <FaLinkedin /></a>
-                        <a className="link link-hover text-2xl"> <FaGithub /> </a>
-                        <a className="link link-hover text-2xl"> <FaFacebook /> </a>
-                        <a className="link link-hover text-2xl"> <FaYoutube /> </a>
+                        <a className="link link-hover text-2xl" href='http://www.linkedin.com/in/nayem-ahmedz' target='_blank' rel='noopener noreferrer'> <FaLinkedin /></a>
+                        <a className="link link-hover text-2xl" href='https://github.com/nayem-ahmedz/' target='_blank' rel='noopener noreferrer'> <FaGithub /> </a>
+                        <a className="link link-hover text-2xl" href='https://web.facebook.com/nayemahmed2z' target='_blank' rel='noopener noreferrer'> <FaFacebook /> </a>
+                        <a className="link link-hover text-2xl" href='https://www.youtube.com/@nayemscanvas' target='_blank' rel='noopener noreferrer'> <FaYoutube /> </a>
                     </div>
                 </nav>
             </section>
