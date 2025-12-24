@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ResumeBtn from "../shared/ResumeBtn";
+import { BiSolidMessageDetail } from "react-icons/bi";
 
 export default function PublicHeader() {
     const navLinks = <>
@@ -34,7 +34,7 @@ export default function PublicHeader() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <ResumeBtn />
+                    <Link href='/contact' className="btn btn-sm md:btn-md btn-primary btn-outline text-base"> <BiSolidMessageDetail className="text-xl" /> Say Hello</Link>
                 </div>
             </div>
         </header>

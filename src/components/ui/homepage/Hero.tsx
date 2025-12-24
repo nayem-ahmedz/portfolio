@@ -1,8 +1,7 @@
 import ProfileImage from "@/components/shared/ProfileImage";
-import Link from "next/link";
-import { BiSolidMessageDetail } from "react-icons/bi";
 import TypewriterDesignation from "@/components/shared/TypewriterDesignation";
 import ResumeBtn from "@/components/shared/ResumeBtn";
+import SayHelloBtn from "@/components/shared/SayHelloBtn";
 
 export default function Hero() {
     return (
@@ -16,7 +15,7 @@ export default function Hero() {
                     <h1 className="text-5xl font-bold my-2 -ml-1">Nayem Ahmed</h1>
                     <TypewriterDesignation />
                     <div className="flex gap-3 mt-6">
-                        <Link href='/contact' className="btn btn-primary text-base"> <BiSolidMessageDetail className="text-xl" /> Say Hello</Link>
+                        <SayHelloBtn />
                         <ResumeBtn />
                     </div>
                 </div>

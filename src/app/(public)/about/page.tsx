@@ -7,6 +7,7 @@ import { RiSendPlane2Line } from "react-icons/ri";
 export default function About() {
     return (
         <section className='px-4 py-10'>
+            <title>About | Nayem Ahmed</title>
             <div className='text-center'>
                 <div className="w-fit mx-auto">
                     <ProfileImage />

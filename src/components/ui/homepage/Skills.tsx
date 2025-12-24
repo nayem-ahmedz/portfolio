@@ -52,7 +52,7 @@ export default function Skills() {
     const categories = ["All", "Frontend", "Backend and Database", "Tools & Others"];
     return (
         <section className="px-4 py-6">
-            <h2 className="text-3xl text-center mb-8 font-semibold">My Skills</h2>
+            <h2 className="text-3xl text-center mb-8 font-medium">My Skills</h2>
 
             {/* Filter Buttons */}
             <div className="flex flex-wrap justify-center gap-3 mb-8">

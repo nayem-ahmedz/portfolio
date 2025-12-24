@@ -11,6 +11,7 @@ export default function Contact() {
     }
     return (
         <section className="hero min-h-[70vh] py-10">
+            <title>Contact | Nayem Ahmed</title>
             <div className="hero-content flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-40">
                 <div className="text-left shrink-0">
                     <p className="ml-1 text-xl mb-2">Contact Me!</p>
