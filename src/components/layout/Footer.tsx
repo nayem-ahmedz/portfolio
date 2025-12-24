@@ -28,9 +28,9 @@ export default function Footer() {
                 </nav>
                 <nav>
                     <h6 className="footer-title mb-0 md:mb-2">Quick Links</h6>
-                    <Link href='/' className="link link-hover">Home</Link>
                     <Link href='/about' className="link link-hover">About me</Link>
                     <Link href='/contact' className="link link-hover">Contact me</Link>
+                    <Link href='/auth/login' className="link link-hover">Login</Link>
                     <Link href='/blog' className="link link-hover">Blog</Link>
                 </nav>
                 <nav>
