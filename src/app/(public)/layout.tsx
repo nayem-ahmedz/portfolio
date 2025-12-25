@@ -1,5 +1,5 @@
 import Footer from '@/components/layout/Footer';
-import PublicHeader from '@/components/layout/PublicHeader';
+import Header from '@/components/layout/Header';
 
 export default function PublicLayout({
   children,
@@ -8,7 +8,7 @@ export default function PublicLayout({
 }) {
   return(
     <>
-        <PublicHeader />
+        <Header />
         <main className='containerr'>
             { children }
         </main>

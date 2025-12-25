@@ -21,16 +21,17 @@ export default function Footer() {
                 </aside>
                 <nav>
                     <h6 className="footer-title mb-0 md:mb-2">Portfolio Projects</h6>
-                    <a className="link link-hover">React Js</a>
-                    <a className="link link-hover">Full-stack</a>
-                    <a className="link link-hover">On-going</a>
-                    <a className="link link-hover">Academic/University</a>
+                    <Link href='/projects' className="link link-hover">React Js</Link>
+                    <Link href='/projects' className="link link-hover">Full-stack</Link>
+                    <Link href='/projects' className="link link-hover">On-going</Link>
+                    <Link href='/projects' className="link link-hover">Academic/University</Link>
                 </nav>
                 <nav>
                     <h6 className="footer-title mb-0 md:mb-2">Quick Links</h6>
+                    <Link href='/' className="link link-hover">Home</Link>
                     <Link href='/about' className="link link-hover">About me</Link>
                     <Link href='/contact' className="link link-hover">Contact me</Link>
-                    <Link href='/auth/login' className="link link-hover">Login</Link>
+                    {/* <Link href='/auth/login' className="link link-hover">Login</Link> */}
                     <Link href='/blog' className="link link-hover">Blog</Link>
                 </nav>
                 <nav>

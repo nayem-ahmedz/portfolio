@@ -1,18 +1,39 @@
-export default function ProjectCard() {
-  return (
-    <div className="card bg-base-100 shadow-sm">
-      <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes" />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">Card Title</h2>
-        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
-        </div>
-      </div>
-    </div>
-  );
+import { UnifiedProject } from "@/types/project";
+import Link from "next/link";
+
+interface ProjectCardProps {
+    project: UnifiedProject;
+}
+
+export default function ProjectCard({ project }: ProjectCardProps) {
+    return (
+        <section className="card bg-base-200 shadow-md border border-gray-300 dark:border-gray-700">
+            <figure>
+                <img src={project.media.screenshot} alt={project.name} className="aspect-video object-cover w-full" />
+            </figure>
+            <div className="card-body">
+                <div className="flex justify-between items-start">
+                    <h2 className="card-title text-xl">{project.name}</h2>
+                    {/* Badge logic based on your stack.type */}
+                    <div className={`badge ${project.stack.type === 'Fullstack' ? 'badge-secondary' : 'badge-ghost'}`}>
+                        {project.stack.type}
+                    </div>
+                </div>
+                <p className="text-sm opacity-70 line-clamp-2 grow-0">
+                    {project.shortSummary}
+                </p>
+                {/* Tech Badges Section */}
+                <div className="card-actions justify-start mt-2 grow">
+                    {project.tech.map((t) => (
+                        <div key={t} className="badge badge-outline badge-sm border-gray-300 dark:border-gray-700">{t}</div>
+                    ))}
+                </div>
+                <div className="card-actions justify-end mt-4">
+                    <Link href={`/projects/${project.slug}`} className="btn btn-primary btn-sm">
+                        View Details
+                    </Link>
+                </div>
+            </div>
+        </section>
+    );
 }

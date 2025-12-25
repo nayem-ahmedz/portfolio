@@ -47,7 +47,8 @@ export default function Contact() {
                                 <input type="text" className="input w-full" placeholder="Name" />
                                 <input type="email" className="input w-full" placeholder="Email" />
                                 <textarea className="textarea w-full resize-none" placeholder="Message or Feedback"></textarea>
-                                <button className="btn btn-neutral mt-4">Send</button>
+                                <button className="btn btn-neutral mt-4" disabled>Send</button>
+                                <p className="text-center">coming soon...</p>
                             </fieldset>
                         </form>
                     </div>

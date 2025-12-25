@@ -7,7 +7,7 @@ and expertise in data science and machine learning. This portfolio showcases som
 
 You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-ahmed.vercel.app/);
 
-<!-- ![Portfolio Screenshot](./public/media/screenshot.webp) -->
+![Portfolio Screenshot](./public/portfolio-homepage.webp)
 
 ## Technology used
 - Next Js
@@ -34,6 +34,7 @@ Converted on
 - Last updated on: 5 Dec 2024
 
 ## Version History
+- **v3.0.0 (Dec 2025)** – Moved to Next Js, used TypeScript
 - **v2.2.1 (Oct 2025)** – Updated routes, solved image loadin issue and added 2 React Js Projects
 - **v2.2.0 (Oct 2025)** – Updated route using React Router Data mode, redefined project strucutre, added sort method on project page
 - **v2.1.0 (Sep 2025)** – Updated Profile, Modal on Project section, animation before image loads, redefined grid-based project layout

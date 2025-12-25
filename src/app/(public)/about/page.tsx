@@ -2,7 +2,6 @@ import ProfileImage from "@/components/shared/ProfileImage";
 import Services from "@/components/ui/homepage/Services";
 import { CgProfile } from "react-icons/cg";
 import { FaUserGraduate } from "react-icons/fa";
-import { RiSendPlane2Line } from "react-icons/ri";
 
 export default function About() {
     return (
@@ -28,18 +27,18 @@ export default function About() {
                     <li>Skilled in API design, data modeling, and secure backend development</li>
                     <li>Well-versed with Git, GitHub, Linux, Postman, and modern deployment platforms such as Vercel and Render</li>
                 </ul>
-                <h3 className='flex gap-3 items-center text-2xl md:text-3xl my-3 mt-6'> <FaUserGraduate /> Education</h3>
-                <h4>B.Sc in Computer Science and Engineering</h4>
-                <h4>Metropolitan University, Sylhet</h4>
-                <p>2022 - 2025 </p>
-                <p>Courseworks : Machine Learning, Data Strucutre, Algorithm, Database, Object Oriented Programming...</p>
-                <h4 className="flex gap-3 text-2xl md:text-3xl my-3 mt-6"> <RiSendPlane2Line /> Professional Interests & Goals</h4>
+                <h4 className="flex gap-3 text-2xl md:text-3xl my-3 mt-6">Professional Interests & Goals</h4>
                 <ul className="list-disc pl-6 space-y-2">
                     <li>Building scalable backend systems and improving expertise in system design</li>
                     <li>Expanding knowledge in Next.js, advanced backend architectures, and cloud-native development</li>
                     <li>Contributing to open-source projects and collaborating with engineering teams</li>
                     <li>Continuously learning new tools and frameworks to enhance development efficiency </li>
                 </ul>
+                <h3 className='flex gap-3 items-center text-2xl md:text-3xl my-3 mt-6'> <FaUserGraduate /> Education</h3>
+                <h4>B.Sc in Computer Science and Engineering</h4>
+                <h4>Metropolitan University, Sylhet</h4>
+                <p>2022 - 2025 </p>
+                <p>Courseworks : Machine Learning, Data Strucutre, Algorithm, Database, Object Oriented Programming...</p>
             </article>
             <Services />
         </section>
