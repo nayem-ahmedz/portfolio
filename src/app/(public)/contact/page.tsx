@@ -18,21 +18,21 @@ export default function Contact() {
                     <h1 className="text-3xl md:text-5xl font-bold mb-4">Let's Collaborate</h1>
                     <p className="max-w-md mb-6">Interested in hiring me for your project or just want to say hi? You can fill in the contact form or send me an email</p>
                     <div className="flex items-start gap-4">
-                        <MdOutlineLocationOn className="text-2xl" />
+                        <MdOutlineLocationOn className="text-2xl mt-px" />
                         <h6 className="text-base">
                             <span className="font-bold block">ADDRESS</span>
                             Sylhet, Bangladesh
                         </h6>
                     </div>
                     <div className="flex items-start gap-4 my-4">
-                        <MdOutlineMail className="text-2xl" />
+                        <MdOutlineMail className="text-2xl mt-px" />
                         <h6 className="text-base">
                             <span className="font-bold block">EMAIL</span>
-                            nayemahmedz@proton.me
+                            <a href="mailto:nayemahmedz@proton.me" className="link link-hover flex items-center gap-2">nayemahmedz@proton.me</a>
                         </h6>
                     </div>
                     <div className="flex items-start gap-4">
-                        <FaPhoneAlt className="text-xl" />
+                        <FaPhoneAlt className="text-xl mt-1" />
                         <h6 className="text-base">
                             <span className="font-bold block">PHONE</span>
                             880-1620358892

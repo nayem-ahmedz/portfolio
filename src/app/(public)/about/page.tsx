@@ -11,7 +11,7 @@ export default function About() {
                 <div className="w-fit mx-auto">
                     <ProfileImage />
                 </div>
-                <h1 className='text-3xl md:text-4xl my-2'>Nayem Ahmed</h1>
+                <h1 className='text-3xl md:text-4xl mt-4 mb-2'>Nayem Ahmed</h1>
                 <p className="text-xl">Full-stack Web Developer</p>
             </div>
             <article className='mb-8'>
