@@ -1,18 +1,20 @@
 # Nayem's Space
-A portfolio website of Nayem Ahmed
+A portfolio website of Nayem Ahmed, full-stack web developer from Sylhet, Bangladesh
 
 ## Overview
 Hi, I am **Nayem Ahmed**, a passionate Computer Science and Engineering student with a strong foundation in web development (MERN stack)
 and expertise in data science and machine learning. This portfolio showcases some of my best work and demonstrates my skills in web development.
 
-You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-ahmed.vercel.app/);
+You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-ahmed.vercel.app);
 
 ![Portfolio Screenshot](./public/portfolio-homepage.webp)
 
 ## Technology used
 - Next Js
-- TailwindCSS and DaisyUI
 - TypeScript
+- MongoDB
+- TailwindCSS
+- DaisyUI
 - HTML
 
 ## Tools and Libraries
@@ -30,10 +32,11 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 - Initially Created on: 6 September 2024
 Converted on
 - React App: 1 November 2024 (vite/23-Feb-2025)
-- Next Js App: 5 Dec 2024
-- Last updated on: 5 Dec 2024
+- Next Js App: 5 Dec 2025
+- Last updated on: 17 Feb 2026
 
 ## Version History
+- **v3.0.1 (Feb 2025)** – Project data now fetch from Database
 - **v3.0.0 (Dec 2025)** – Moved to Next Js, used TypeScript
 - **v2.2.1 (Oct 2025)** – Updated routes, solved image loadin issue and added 2 React Js Projects
 - **v2.2.0 (Oct 2025)** – Updated route using React Router Data mode, redefined project strucutre, added sort method on project page
@@ -47,4 +50,4 @@ Converted on
 If you would like to get in touch, feel free to connect via:
 + Email : nayemahmedz@proton.me 
 + Linkedin : www.linkedin.com/in/nayem-ahmedz
-+ Github : https://github.com/nayem-ahmedz/
++ Github : https://github.com/nayem-ahmedz

@@ -7,7 +7,7 @@ export default function NotFound() {
             <div className="hero-content text-center">
                 <div className="max-w-md">
                     <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-                        Oops! Page Not Found
+                        Oops! Project Not Found
                     </h1>
                     <p className="py-6 text-gray-600 dark:text-gray-400 text-lg">
                         Looks like you've followed a broken link or entered a URL that doesn't exist on my site.

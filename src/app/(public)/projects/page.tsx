@@ -1,20 +1,11 @@
-"use client";
-
-import { useState } from "react";
-import projectsData from "@/data/web-projects.json";
-import { UnifiedProject } from "@/types/project";
-import { SiReact, SiMongodb } from "react-icons/si";
-import { FaList } from "react-icons/fa";
 import ProjectCard from "@/components/ui/projects/ProjectCard";
+import allProjects from "@/lib/allProjects";
+import { ProjectCardT } from "@/types/project";
 
-export default function Projects() {
-    const [filter, setFilter] = useState<string>("all");
-    // Cast data
-    const projects = projectsData as UnifiedProject[];
-    // Reverse so newest projects appear first, then apply filter
-    const filteredProjects = [...projects]
-        .reverse()
-        .filter((p) => filter === "all" || p.category === filter);
+export const revalidate = 3600; // Cache for 1 hour
+
+export default async function Projects() {
+    const projects : ProjectCardT[] = await allProjects();
     return (
         <section className="min-h-screen bg-base-100 py-12 px-4">
             <title>Projects | Nayem Ahmed</title>
@@ -26,37 +17,10 @@ export default function Projects() {
                         A collection of full-stack applications and frontend interfaces I&apos;ve built using the MERN stack and React.
                     </p>
                 </div>
-                {/* Filter Tabs */}
-                <div className="flex justify-center mb-10">
-                    <div className="tabs tabs-boxed bg-base-200 p-1">
-                        <button
-                            type="button"
-                            onClick={() => setFilter("all")}
-                            className={`tab gap-2 transition-all ${filter === "all" ? "tab-active" : ""}`}
-                        >
-                            <FaList size={14} /> All
-                        </button>
-                        <button
-                            type="button"
-                            onClick={() => setFilter("mern-stack")}
-                            className={`tab gap-2 transition-all ${filter === "mern-stack" ? "tab-active" : ""}`}
-                        >
-                            <SiMongodb size={14} className="text-green-600" /> MERN Stack
-                        </button>
-                        <button
-                            type="button"
-                            onClick={() => setFilter("react-js")}
-                            className={`tab gap-2 transition-all ${filter === "react-js" ? "tab-active" : ""}`}
-                        >
-                            <SiReact size={14} className="text-blue-400" /> React JS
-                        </button>
-                    </div>
-                </div>
-                {/* Projects Grid */}
-                {filteredProjects.length > 0 ? (
+                {projects.length > 0 ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                        {filteredProjects.map((project) => (
-                            <ProjectCard key={project.id} project={project} />
+                        {projects.map((project) => (
+                            <ProjectCard key={project.slug} project={project} />
                         ))}
                     </div>
                 ) : (
