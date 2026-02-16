@@ -4,9 +4,11 @@ import connectDB from "./db";
 export default async function projectDetails(slug: string) {
     try {
         await connectDB();
-        const project = await Project.findOne({ slug }).lean();
+        const project = await Project.findOne({ slug })
+            .select('-__v -createdAt -isFeatured -shortSummary -slug -updatedAt')
+            .lean();
         if (!project) return null;
-        
+
         return JSON.parse(JSON.stringify(project));
     } catch (err) {
         console.error('Error fetching project details:', err);

@@ -3,9 +3,10 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 // React Icons
-import { FaGithub, FaExternalLinkAlt, FaCheckCircle, FaArrowLeft } from "react-icons/fa";
+import { FaGithub, FaCode, FaServer, FaExternalLinkAlt, FaCheckCircle, FaArrowLeft } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiFirebase, SiTailwindcss, SiJavascript, SiFramer } from "react-icons/si";
 import projectDetails from "@/lib/projectDetails";
+import { ProjectT } from "@/types/project";
 
 type Props = {
     params: Promise<{ slug: string }>;
@@ -37,7 +38,7 @@ const getTechIcon = (tech: string): React.ReactNode => {
 
 export default async function ProjectDetails({ params }: Props) {
     const { slug } = await params;
-    const project = await projectDetails(slug);
+    const project : ProjectT | null = await projectDetails(slug);
     if (!project) notFound();
 
     return (
@@ -135,8 +136,8 @@ export default async function ProjectDetails({ params }: Props) {
 
 const getRepoIcon = (label: string) => {
     switch (label) {
-        case 'Client': return <FaGithub />;
-        case 'Server': return <FaGithub />;
+        case 'Client': return <FaCode />;
+        case 'Server': return <FaServer />;
         default: return <FaGithub />; // For "Source" or others
     }
 };
