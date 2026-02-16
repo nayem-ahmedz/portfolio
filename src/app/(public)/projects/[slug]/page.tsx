@@ -1,13 +1,11 @@
-import React from "react";
 import { notFound } from "next/navigation";
-import projectsData from '@/data/web-projects.json';
 import Link from "next/link";
 import { Metadata } from 'next';
 
 // React Icons
 import { FaGithub, FaExternalLinkAlt, FaCheckCircle, FaArrowLeft } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiFirebase, SiTailwindcss, SiJavascript, SiFramer } from "react-icons/si";
-import { UnifiedProject } from "@/types/project";
+import projectDetails from "@/lib/projectDetails";
 
 type Props = {
     params: Promise<{ slug: string }>;
@@ -15,10 +13,9 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
-    const project = (projectsData as UnifiedProject[]).find((p) => p.slug === slug);
-
+    const project = await projectDetails(slug);
     return {
-        title: project ? `${project.name} | Portfolio` : 'Project Not Found',
+        title: project ? `${project.name} | Project Details` : 'Project Not Found',
         description: project?.shortSummary,
     };
 }
@@ -40,8 +37,7 @@ const getTechIcon = (tech: string): React.ReactNode => {
 
 export default async function ProjectDetails({ params }: Props) {
     const { slug } = await params;
-    const project = (projectsData as UnifiedProject[]).find((p) => p.slug === slug);
-
+    const project = await projectDetails(slug);
     if (!project) notFound();
 
     return (
@@ -59,7 +55,7 @@ export default async function ProjectDetails({ params }: Props) {
                         <section>
                             <div className="rounded-3xl overflow-hidden shadow-2xl border border-base-300">
                                 <img
-                                    src={project.media.screenshot}
+                                    src={project.screenshots[0]}
                                     alt={project.name}
                                     className="w-full h-auto object-cover"
                                 />
@@ -93,8 +89,7 @@ export default async function ProjectDetails({ params }: Props) {
                                 <div>
                                     <h1 className="text-3xl font-bold mb-2">{project.name}</h1>
                                     <div className="flex flex-wrap gap-2">
-                                        <span className="badge badge-secondary">{project.stack.type}</span>
-                                        <span className="badge badge-outline">{project.metadata.difficulty}</span>
+                                        <span className="badge badge-secondary">{project.category}</span>
                                     </div>
                                 </div>
 
@@ -111,24 +106,23 @@ export default async function ProjectDetails({ params }: Props) {
                                 </div>
 
                                 <div className="flex flex-col gap-3 pt-4">
-                                    <a href={project.links.live} target="_blank" rel="noopener noreferrer" className="btn btn-primary w-full gap-2">
+                                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary w-full gap-2">
                                         <FaExternalLinkAlt /> Live Demo
                                     </a>
-                                    {project.links.github.client && (
-                                        <a href={project.links.github.client} target="_blank" rel="noopener noreferrer" className="btn btn-outline w-full gap-2">
-                                            <FaGithub /> Frontend Code
-                                        </a>
-                                    )}
-                                    {project.links.github.server && (
-                                        <a href={project.links.github.server} target="_blank" rel="noopener noreferrer" className="btn btn-outline w-full gap-2">
-                                            <FaGithub /> Backend Code
-                                        </a>
-                                    )}
-                                </div>
-
-                                <div className="pt-6 border-t border-base-300 text-xs opacity-50 flex justify-between">
-                                    <span>Created: {new Date(project.metadata.createdAt).toLocaleDateString()}</span>
-                                    <span>Updated: {new Date(project.metadata.updatedAt).toLocaleDateString()}</span>
+                                    {
+                                        project.repositories?.map((repo, index) => (
+                                            <a
+                                                key={index}
+                                                href={repo.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn btn-outline w-full gap-2"
+                                            >
+                                                {getRepoIcon(repo.label)}
+                                                {repo.label} Code
+                                            </a>
+                                        ))
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -139,9 +133,10 @@ export default async function ProjectDetails({ params }: Props) {
     );
 }
 
-export async function generateStaticParams() {
-    const projects = projectsData as UnifiedProject[];
-    return projects.map((project) => ({
-        slug: project.slug,
-    }));
-}
+const getRepoIcon = (label: string) => {
+    switch (label) {
+        case 'Client': return <FaGithub />;
+        case 'Server': return <FaGithub />;
+        default: return <FaGithub />; // For "Source" or others
+    }
+};

@@ -1,22 +1,18 @@
-import { UnifiedProject } from "@/types/project";
-import Link from "next/link";
+import { ProjectCardT } from '@/types/project';
+import Link from 'next/link';
 
-interface ProjectCardProps {
-    project: UnifiedProject;
-}
-
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({ project }: { project: ProjectCardT }) {
     return (
         <section className="card bg-base-200 shadow-md border border-gray-300 dark:border-gray-700">
             <figure>
-                <img src={project.media.screenshot} alt={project.name} className="aspect-video object-cover w-full" />
+                <img src={project.screenshots[0]} alt={project.name} className="aspect-video object-cover w-full" />
             </figure>
             <div className="card-body">
                 <div className="flex justify-between items-start">
                     <h2 className="card-title text-xl">{project.name}</h2>
                     {/* Badge logic based on your stack.type */}
-                    <div className={`badge ${project.stack.type === 'Fullstack' ? 'badge-secondary' : 'badge-ghost'}`}>
-                        {project.stack.type}
+                    <div className={`badge ${project.category === 'Fullstack' ? 'badge-secondary' : 'badge-ghost'}`}>
+                        {project.category}
                     </div>
                 </div>
                 <p className="text-sm opacity-70 line-clamp-2 grow-0">

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "daisyui": "^5.5.14",
+    "mongoose": "^9.2.1",
     "motion": "^12.23.26",
     "next": "^16.1.1",
     "react": "^19.2.3",

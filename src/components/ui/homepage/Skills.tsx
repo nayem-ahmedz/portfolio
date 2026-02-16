@@ -1,6 +1,6 @@
 'use client';
 import { FaReact, FaNodeJs, FaGitAlt, FaHtml5, FaCss3Alt, FaPython } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiJavascript, SiMysql, SiTailwindcss } from "react-icons/si";
+import { SiExpress, SiMongodb, SiJavascript, SiMysql, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "motion/react"
 import { useState } from "react";
@@ -18,12 +18,13 @@ export const skillsData: SkillCategory[] = [
   {
     title: "Frontend",
     skills: [
+      { name: "TypeScript", icon: SiTypescript, colorClass: "text-[#3178C6]" },
       { name: "Next.js", icon: TbBrandNextjs, colorClass: "text-black" },
       { name: "React.js", icon: FaReact, colorClass: "text-[#61DBFB]" },
       { name: "Tailwind CSS", icon: SiTailwindcss, colorClass: "text-[#38B2AC]" },
-      { name: "JavaScript", icon: SiJavascript, colorClass: "text-[#F7DF1E]" },
       { name: "HTML5", icon: FaHtml5, colorClass: "text-[#E34F26]" },
       { name: "CSS3", icon: FaCss3Alt, colorClass: "text-[#1572B6]" },
+      { name: "JavaScript", icon: SiJavascript, colorClass: "text-[#F7DF1E]" }
     ],
   },
   {
