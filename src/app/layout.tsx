@@ -22,7 +22,10 @@ export const metadata: Metadata = {
         icon: '/favicon.ico',
         apple: '/logo192.png'
     },
-    robots: "index, follow"
+    robots: "index, follow",
+    verification: {
+        google: "xON67QMLreyQ4Glp17B2DsSLyghLcN8xywu5aw5YX5s"
+    }
 };
 
 export default function RootLayout({
