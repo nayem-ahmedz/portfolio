@@ -1,5 +1,5 @@
 # Nayem's Space
-A portfolio website of Nayem Ahmed, full-stack web developer from Sylhet, Bangladesh
+A portfolio website of Nayem Ahmed, Support Engineer @Appifylab and passinate full-stack web developer from Sylhet, Bangladesh
 
 ## Overview
 Hi, I am **Nayem Ahmed**, a passionate Computer Science and Engineering student with a strong foundation in web development (MERN stack)
@@ -33,7 +33,7 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 Converted on
 - React App: 1 November 2024 (vite/23-Feb-2025)
 - Next Js App: 5 Dec 2025
-- Last updated on: 17 Feb 2026
+- Last updated on: 24 March 2026
 
 ## Version History
 - **v3.0.1 (Feb 2025)** – Project data now fetch from Database

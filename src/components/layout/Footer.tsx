@@ -14,7 +14,7 @@ export default function Footer() {
                 <aside className="gap-0">
                     <FaCode className="text-4xl mb-3" />
                     <h4 className="text-2xl">Nayem Ahmed</h4>
-                    <p className="text-xl mb-2">Full-stack Web Developer</p>
+                    <p className="text-xl mb-2">Support Engr. | Full-stack Web Developer</p>
                     <p>
                         Committed to build efficient, scalable, and intuitive full-stack web solutions.
                     </p>
