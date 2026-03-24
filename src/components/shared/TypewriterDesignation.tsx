@@ -4,7 +4,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 export default function TypewriterDesignation() {
   const [text] = useTypewriter({
     words: [
-      'Front-end Developer',
+      'Support Engineer @Appifylab',
       'Full-stack Web Developer',
       'MERN Stack Specialist'
     ],
