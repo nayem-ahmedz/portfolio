@@ -2,12 +2,41 @@
 import { MdOutlineMail } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
-import { FormEvent } from "react";
 
 export default function Contact() {
-    const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        alert('Send Message Feature is not ready yet');
+
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+
+        const data = {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            message: formData.get("message"),
+        };
+
+        try {
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            });
+
+            const result = await res.json();
+
+            if (result.success) {
+                alert("Message sent!");
+                form.reset();
+            } else {
+                alert("Something went wrong.");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Failed to send message.");
+        }
     }
     return (
         <section className="hero min-h-[70vh] py-10">
@@ -44,11 +73,11 @@ export default function Contact() {
                         <form onSubmit={handleSubmit}>
                             <h5 className="text-xl mb-2">SEND A MESSAGE</h5>
                             <fieldset className="fieldset space-y-3">
-                                <input type="text" className="input w-full" placeholder="Name" />
-                                <input type="email" className="input w-full" placeholder="Email" />
-                                <textarea className="textarea w-full resize-none" placeholder="Message or Feedback"></textarea>
-                                <button className="btn btn-neutral mt-4" disabled>Send</button>
-                                <p className="text-center">coming soon...</p>
+                                <input type="text" className="input w-full" name="name" placeholder="Name" />
+                                <input type="email" className="input w-full" name="email" placeholder="Email" />
+                                <textarea className="textarea w-full resize-none" name="message" placeholder="Message or Feedback"></textarea>
+                                <button type="submit" className="btn btn-neutral mt-4">Send</button>
+                                {/* <p className="text-center">coming soon...</p> */}
                             </fieldset>
                         </form>
                     </div>

@@ -20,7 +20,8 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 ## Tools and Libraries
 - react-icons
 - react-simple-typewriter
-- motion : for animation
+- motion : animation
+- resend : email sending
 
 ## Features
 - A dynamic and fully responsive layout.
@@ -33,7 +34,7 @@ You can visit my Portffolio live here: [Nayem Ahmed's Portfolio](https://nayem-a
 Converted on
 - React App: 1 November 2024 (vite/23-Feb-2025)
 - Next Js App: 5 Dec 2025
-- Last updated on: 24 March 2026
+- Last updated on: 29 April 2026
 
 ## Version History
 - **v3.0.1 (Feb 2025)** – Project data now fetch from Database
